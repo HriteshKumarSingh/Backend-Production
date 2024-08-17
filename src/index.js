@@ -5,7 +5,7 @@ import { app } from './app.js';
 
 connectDB()
 .then(() => {
-    app.on("error" , (err) => {
+    app.on("error" , (error) => {
         console.error("Server connection failed !!! :: ",error)
     })
 
